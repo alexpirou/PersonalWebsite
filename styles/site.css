@@ -1,0 +1,31 @@
+body {
+    background-color:whitesmoke;
+}
+
+nav {
+    background-color: #333;
+    border-radius: 5px;
+    font-size: larger;
+}
+      
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+      
+nav ul li {
+    display: inline;
+}
+      
+nav ul li a {
+    display: inline-block;
+    padding: 30px 70px;
+    text-decoration: none;
+    color: white;
+}
+      
+nav ul li a:hover {
+    background-color: #0D0D0D;
+    border-radius: 5px;
+}
