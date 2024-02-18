@@ -66,6 +66,39 @@ nav ul li a:hover {
     border-radius: 1000px;
 }
 
+.accordion {
+    background-color: #dadada;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  .accordion:after {
+    content: '+';
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "-";
+  }
+
 .article-photo {
     width: 400px;
     height: 400px;
