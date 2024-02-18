@@ -7,19 +7,30 @@
     <link rel="stylesheet" type="text/css" href="styles/site.css">
 </head>
 <body>
+
   <nav>
     <a class="logo" id="logo">&lt; AP &gt;</a>
 
     <ul>
         <li><a href="/index.html">Home</a></li>
-        <li><a href="/projects.html">Projects</a></li>
+        <li class="dropdown">
+          <a href="/projects.html">Projects</a>
+          <div class="dropdown-content">
+            <a href="/web-projects.html">Web Development</a>
+            <a href="/game-projects.html">Game Development</a>
+            <a href="/art-projects.html">Digital Art</a>
+          </div>
+        </li>
         <li><a href="/contact.html">Contact Me</a></li>
     </ul>
   </nav>
 
-  <div class="container">
-    <header class="intro">
-      <div class="headshot">
+  <div class="line-spacer"></div>
+
+  <div class="overview-container">
+
+    <div class="headshot-column-container">
+      <section class="headshot">
         <picture>
           <img src="images/AP_headshot.jpg" alt="Headshot of man in red in front of brick wall" width="300px" height="300px">
         </picture> 
@@ -27,14 +38,25 @@
         <p>📍 Ithaca, NY</p>
         <p>💼 LinkedIn</p>
         <p>💻 GitHub</p>
-      </div>
-      <div class="bioContainer">
+      </section>
+      <section class="skills-container">
+        <div class="skill-item">Adobe Creative Cloud</div>
+        <div class="skill-item">C++</div>
+        <div class="skill-item">Java</div>
+        <div class="skill-item">Javascript</div>
+        <div class="skill-item">Figma</div>
+        <div class="skill-item">Balsamiq Wireframes</div>
+    </div>
+    
+    <div class="cv-container">
+      <h2>Overview</h2>
+      <section class="bio">
         <p>I'm a tech enthusiast with expertise in various game and web development practices. I've honed my skills and passion for empowering others through technology with experience gained both while at the University of Utah and professionally with positions at Microsoft and Cornell University.</p>
-    </header>
-
-    <div class="lineSpacer"></div>
+      </section>
+        
+      <div class="line-spacer"></div>
   
-      <section class="workExperience">
+      <section class="work-experience">
         <h2>Recent Experience</h2>
         <div>
           <h3>Cornell University</h3>
@@ -53,6 +75,8 @@
         </div>
       </section>
 
+      <div class="line-spacer"></div>
+
       <section class="education">
         <h2>Education</h2>
         <h3>University of Utah</h3>
@@ -60,7 +84,9 @@
         <p>3.83 GPA</p>
       </section>
     </div>
-    <script src="/scripts/animateLogo.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  
+  </div>
+
+  <footer></footer>
 </body>
 </html>
