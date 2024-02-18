@@ -62,22 +62,23 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
-picture img {
+.headshot picture img {
     border-radius: 1000px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+.article-photo {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; 
+    overflow: hidden; 
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.297);
+
 }
 
-.grid-item {
-    background-color: transparent;
-    border: 1px solid #000;
-    padding: 30px;
-    text-align: center;
-    border-radius: 5px;
+article picture {
+    display: flex;
+    flex-direction: column;
 }
 
 .line-spacer {
