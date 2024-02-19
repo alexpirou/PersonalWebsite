@@ -7,6 +7,21 @@ body {
     padding: 40px;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0177e6;
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -29,6 +44,7 @@ nav ul li a {
     padding: 30px 70px;
     text-decoration: none;
     color: rgb(117, 117, 117);
+    transition: color 0.3s ease;
 }
       
 nav ul li a:hover {
@@ -64,6 +80,25 @@ nav ul li a:hover {
 
 .headshot picture img {
     border-radius: 1000px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.297);
+    width: 300px;
+    height: 300px;
+}
+
+.experience-company {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-and-company {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.experience-company picture img {
+    width: 48px;
+    height: 48px;
 }
 
 .accordion {
